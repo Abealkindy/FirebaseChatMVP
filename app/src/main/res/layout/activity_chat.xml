@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rosinante.firebasechatmvp.views.activity.ChatActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="@string/title_chat_room"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/linear_send_chat"
+            tools:listitem="@layout/chat_item" />
+
+        <LinearLayout
+            android:id="@+id/linear_send_chat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_text_message"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_edit_text"
+                android:hint="@string/type_something_here_hint"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/button_send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/ground_button"
+                android:text="@string/send_button_text"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

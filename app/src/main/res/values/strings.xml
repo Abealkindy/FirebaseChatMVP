@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Firebase Chat MVP</string>
+    <string name="button_auth_text">Authenticate your self</string>
+    <string name="text_success">Authentication is successful</string>
+    <string name="create_chat_room_text">Create Chat Room</string>
+    <string name="enter_chat_room_text">Enter Chat Room</string>
+    <string name="enter_chat_room_name_text">Enter Chat Room Name</string>
+    <string name="text_explanation">Nama dari akan menjadi kunci bagi orang lain yang ingin masuk ke room yang sama dengan anda :D</string>
+    <string name="room_name_hint">Room Name</string>
+    <string name="buttonsubmittext">Submit</string>
+    <string name="auth_process_text">Authenticating.....</string>
+    <string name="title_chat_room">Message</string>
+    <string name="type_something_here_hint">Type Something here</string>
+    <string name="send_button_text">Send</string>
+</resources>
